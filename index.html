@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -16,65 +17,195 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <div id="section-1">
+    <div id="account-name">
+      <img src="/images/image-jeremy.png" alt="">
+      <h4>Report for</h4>
+      <h1>Jeremy Robson</h1>
+    </div>
 
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div id="tabs">
+      <button id="daily-button">Daily</button>
+      <button>Weekly</button>
+      <button>Monthly</button> 
+    </div>
   </div>
+
+  <div id="section-2">
+    <div id="card-1" class="card">
+      <div id="color-1">
+        <img src="/images/icon-work.svg" alt="">
+      </div>
+      <div id="description">
+        <span id="card-title">
+          Work
+          <button>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </button>
+        </span>
+        
+        <!-- daily 5hrs-->
+        <!-- daily Previous - 7hrs-->
+        
+        <h3>
+          32hrs <!-- weekly -->
+        </h3>
+        <h4>
+          Previous - 36hrs <!-- weekly -->
+        </h4>
+        
+        
+
+        <!-- monthly 103hrs-->
+        <!-- monthly Previous - 128hrs-->
+      </div>
+    </div>
+
+    <div id="card-2" class="card">
+      <div id="color-2">
+        <img src="/images/icon-play.svg" alt="">
+      </div>
+
+      <div id="description">
+        <span id="card-title">
+          Play
+          <button>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </button>
+        </span>
+        
+         <!-- daily 1hr-->
+         <!-- daily Previous - 2hrs-->
+
+        <h3>
+          10hrs <!-- weekly -->
+        </h3>
+
+        <h4>
+          Previous - 8hrs <!-- weekly -->
+        </h4>
+        
+        
+         <!-- monthly 23hrs-->
+         <!-- monthly Previous - 29hrs-->
+      </div>
+    </div>
+
+    <div id="card-3" class="card">
+      <div id="color-3">
+        <img src="/images/icon-study.svg" alt="">
+      </div>
+      <div id="description">
+        <span id="card-title">
+          Study
+          <button>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </button>
+        </span>
+
+         <!-- daily 0hrs-->
+         <!-- daily Previous - 1hr-->
+
+        <h3>
+          4hrs <!-- weekly -->
+        </h3>
+
+        <h4>
+          Previous - 7hrs <!-- weekly -->
+        </h4>
+        
+        
+         <!-- monthly 13hrs-->
+         <!-- monthly Previous - 19hrs-->
+      </div>
+    </div>
+
+    <div id="card-4" class="card">
+      <div id="color-4">
+        <img src="/images/icon-exercise.svg" alt="">
+      </div>
+      <div id="description">
+        <span id="card-title">
+          Exercise
+          <button>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </button>
+        </span>
+        
+         <!-- daily 1hr-->
+         <!-- daily Previous - 1hr-->
+        
+        <h3>
+          4hrs <!-- weekly -->
+        </h3>
+
+        <h4>
+          Previous - 5hrs <!-- weekly -->
+        </h4>
+        
+        
+         <!-- monthly 11hrs-->
+         <!-- monthly Previous - 18hrs-->
+      </div>
+    </div>
+
+    <div id="card-5" class="card">
+      <div id="color-5">
+        <img src="/images/icon-social.svg" alt="">
+      </div>
+      <div id="description">
+        <span id="card-title">
+          Social
+          <button>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </button>
+        </span>
+        
+         <!-- daily 1hr-->
+         <!-- daily Previous - 3hrs-->
+
+        <h3>
+          5hrs <!-- weekly -->
+        </h3>
+
+        <h4>
+          Previous - 10hrs <!-- weekly -->
+        </h4>
+        
+        
+         <!-- monthly 21hrs-->
+         <!-- monthly Previous - 23hrs-->
+      </div>
+    </div>
+
+    <div id="card-6" class="card">
+      <div id="color-6">
+        <img src="/images/icon-self-care.svg" alt="">
+      </div>
+      <div id="description">
+        <span id="card-title">
+          Self Care
+          <button>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </button>
+        </span>
+        
+         <!-- daily 0hrs-->
+         <!-- daily Previous - 1hr-->
+        
+        <h3>
+          2hrs <!-- weekly -->
+        </h3>
+
+        <h4>
+          Previous - 2hrs <!-- weekly -->
+        </h4>
+        
+         <!-- monthly 7hrs-->
+         <!-- monthly Previous - 11hrs-->
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

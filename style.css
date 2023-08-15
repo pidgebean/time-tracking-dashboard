@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-top: 15%;
+    background-color: hsl(226, 43%, 10%);
+}
+
+#section-1{
+    display: flex;
+    flex-direction: column;
+    /* padding: 1em; */
+    margin-right: 2em;
+    background-color: hsl(235, 46%, 20%);
+    height: 29em;
+    width: 15em;
+    border-radius: 5%;
+}
+
+#section-1 #account-name{
+    padding: 1em;
+    padding-top: 2em;
+    padding-left: 1.5em;
+    border-radius: 5%;
+}
+
+#section-1 #account-name img{
+    width: 3.5em;
+    height: 3.5em;
+    border: 0.2em solid white;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+
+#section-1 #account-name h4{
+    color: white;
+    font-weight: 300;
+}
+
+#section-1 #account-name h1{
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 1.5em;
+}
+
+#section-1 #tabs{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+#section-1 #tabs button{
+    width: 5em;
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    color: hsl(235, 45%, 61%);
+    margin: 1em;
+    text-align: left;
+}
+
+#section-1 #account-name{
+    background-color:  hsl(235, 45%, 61%);
+}
+
+#section-2{
+    display:grid;
+    grid-template-columns: 15em 15em 15em;
+    grid-template-rows: repeat(2, 15em);
+    height: 30em;
+}
+
+#section-2 .card{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    /* padding: 1em; */
+    border-radius: 10%;
+    /* border: 2px solid white; */
+}
+
+#section-2 #color-1{
+    background-color: hsl(15, 100%, 70%);
+    padding-left: 7.5em;
+    /* border-radius: 10%; */
+    /* border-top-left-radius: 20%; */
+    height: 4em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#section-2 #color-2{
+    background-color: hsl(195, 74%, 62%);
+    padding-left: 7.5em;
+    height: 4em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#section-2 #color-3{
+    background-color: hsl(348, 100%, 68%);
+    padding-left: 7.5em;
+    height: 4em;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+#section-2 #color-4{
+    background-color: hsl(145, 58%, 55%);
+    padding-left: 7.5em;
+    height: 4em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#section-2 #color-5{
+    background-color: hsl(264, 64%, 52%);
+    padding-left: 7.5em;
+    height: 4em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#section-2 #color-6{
+    background-color: hsl(43, 84%, 65%);
+    padding-left: 7.5em;
+    height: 4em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#section-2 #description{
+    border-radius: 10%;
+    background-color: hsl(235, 46%, 20%);
+    height: 100%;
+    padding: 1em;
+}
+
+#section-2 #description span{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 1em;
+}
+
+#section-2 #card-title button{
+    margin-left: 6em;
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+}
+
+#section-2 #description h3{
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0.3em;
+}
+
+#section-2 #description h4{
+    font-weight: 300;
+    color: hsl(235, 45%, 61%);
+}
+
