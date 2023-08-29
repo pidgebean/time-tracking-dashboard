@@ -80,6 +80,10 @@ body{
     cursor: pointer;
 }
 
+#section-1 #tabs label:focus{
+    color: white;
+}
+
 #section-1 #account-name{
     background-color:  hsl(235, 45%, 61%);
 }
