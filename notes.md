@@ -29,3 +29,24 @@ That wasn't really helpful. ChatGPT had an interesting solution of basically loo
 
 [01:20:00]
 Okay, it's partially working. The problem was I wasn't going doing the tree properly. But it only works on the work square and the play square, and the "previous" portion comes up as undefined. I'm not sure what's that about.
+
+[02:00:00]
+Still don't know what its problem is. There is also an additional problem. I want one of the tabs to be checked by default. However, when I put "checked" in the HTML, it messes with the whole thing. It makes it so Daily is always checked, which isn't what I want. 
+
+I could do some sort of JavaScript function, that would set the daily tab to be true upon startup. But how would I call it? Usually I call a function by using the onclick feature of HTML. I suppose I could add a script tag and just do it that way. There has got to be an easier way to do this. 
+
+[02:06:00]
+Okay, I think it's the JavaScript function that is messing everything up. Because once I click daily, you can't click on anything else. It's probably running into an error and getting stuck. 
+
+[02:14:00]
+Okay, I was right that it was getting stuck on an error. It seems to be getting mad about the exerciseHours parse line in each of the if statements. No other parse lines, just that one. 
+
+[Unknown]
+Okay, I gave up trying to access the data, since I don't know how to do that with JavaScript yet. I got it working with if statements, which is great.
+
+The next problem I need to conquer is figuring out how to make one of the radio buttons checked by default.
+
+[02:30:00]
+Okay, using the checked="checked" html property worked this time. Why it didn't work last time, I have no idea.
+
+Next thing to conquer is mobile view. This is going to be annoying.

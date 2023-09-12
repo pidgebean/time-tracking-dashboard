@@ -1,192 +1,110 @@
 function dataCrap(){
 
+    // Buttons
     let dailyButton = document.getElementById("daily");
     let weeklyButton = document.getElementById("weekly");
     let monthlyButton = document.getElementById("monthly");
 
-    let workHours = document.getElementById("work-hours");
-    let workSummary = document.getElementById("work-summary");
+    // Work Card attributes
+    let currentWork = document.getElementById("work-hours");
+    let previousWork = document.getElementById("work-summary");
 
-    let playHours = document.getElementById("play-hours");
-    let playSummary = document.getElementById("play-summary");
+    // Play Card attributes
+    let currentPlay = document.getElementById("play-hours");
+    let previousPlay = document.getElementById("play-summary");
 
-    let exerciseHours = document.getElementById("exericse-hours");
-    let exerciseSummary = document.getElementById("exercise-summary");
+    // Study Card attributes
+    let currentStudy = document.getElementById("study-hours");
+    let previousStudy = document.getElementById("study-summary");
 
-    let socialHours = document.getElementById("social-hours");
-    let socialSummary = document.getElementById("social-summary");
+    // Exercise Card attributes
+    let currentExercise = document.getElementById("exercise-hours");
+    let previousExercise = document.getElementById("exercise-summary");
 
-    let selfHours = document.getElementById("self-hours");
-    let selfSummary = document.getElementById("self-summary");
+    // Social Card attributes
+    let currentSocial = document.getElementById("social-hours");
+    let previousSocial = document.getElementById("social-summary");
 
-    let info = `[
-        {
-          "title": "Work",
-          "timeframes": {
-            "daily": {
-              "current": 5,
-              "previous": 7
-            },
-            "weekly": {
-              "current": 32,
-              "previous": 36
-            },
-            "monthly": {
-              "current": 103,
-              "previous": 128
-            }
-          }
-        },
-        {
-          "title": "Play",
-          "timeframes": {
-            "daily": {
-              "current": 1,
-              "previous": 2
-            },
-            "weekly": {
-              "current": 10,
-              "previous": 8
-            },
-            "monthly": {
-              "current": 23,
-              "previous": 29
-            }
-          }
-        },
-        {
-          "title": "Study",
-          "timeframes": {
-            "daily": {
-              "current": 0,
-              "previous": 1
-            },
-            "weekly": {
-              "current": 4,
-              "previous": 7
-            },
-            "monthly": {
-              "current": 13,
-              "previous": 19
-            }
-          }
-        },
-        {
-          "title": "Exercise",
-          "timeframes": {
-            "daily": {
-              "current": 1,
-              "previous": 1
-            },
-            "weekly": {
-              "current": 4,
-              "previous": 5
-            },
-            "monthly": {
-              "current": 11,
-              "previous": 18
-            }
-          }
-        },
-        {
-          "title": "Social",
-          "timeframes": {
-            "daily": {
-              "current": 1,
-              "previous": 3
-            },
-            "weekly": {
-              "current": 5,
-              "previous": 10
-            },
-            "monthly": {
-              "current": 21,
-              "previous": 23
-            }
-          }
-        },
-        {
-          "title": "Self Care",
-          "timeframes": {
-            "daily": {
-              "current": 0,
-              "previous": 1
-            },
-            "weekly": {
-              "current": 2,
-              "previous": 2
-            },
-            "monthly": {
-              "current": 7,
-              "previous": 11
-            }
-          }
-        }
-    ]`
+    // Self Care Card attributes
+    let currentSelf = document.getElementById("self-hours");
+    let previousSelf = document.getElementById("self-summary");
 
-    if (dailyButton.checked = true){
-        // some crap here
-        workHours.innerHTML = JSON.parse(info)[0].timeframes.daily.current;
-        workSummary.innerHTML = JSON.parse(info)[0].timeframes.daily.pervious;
-        
-        playHours.innerHTML = JSON.parse(info)[1].timeframes.daily.current;
-        playSummary.innerHTML = JSON.parse(info)[1].timeframes.daily.pervious;
+    if (dailyButton.checked === true){
+      // Work values
+      currentWork.innerHTML = "5";
+      previousWork.innerHTML = "7";
 
-        studyHours.innerHTML = JSON.parse(info)[2].timeframes.daily.current;
-        studySummary.innerHTML = JSON.parse(info)[2].timeframes.daily.pervious;
+      // Play values
+      currentPlay.innerHTML = "1";
+      previousPlay.innerHTML = "2";
 
-        exerciseHours.innerHTML = JSON.parse(info)[3].timeframes.daily.current;
-        exerciseSummary.innerHTML = JSON.parse(info)[3].timeframes.daily.pervious;
+      // Study values
+      currentStudy.innerHTML = "0";
+      previousStudy.innerHTML = "1";
 
-        socialHours.innerHTML = JSON.parse(info)[4].timeframes.daily.current;
-        socialSummary.innerHTML = JSON.parse(info)[4].timeframes.daily.pervious;
+      // Exercise values
+      currentExercise.innerHTML = "1"
+      previousExercise.innerHTML = "1";
 
-        selfHours.innerHTML = JSON.parse(info)[5].timeframes.daily.current;
-        selfSummary.innerHTML = JSON.parse(info)[5].timeframes.daily.pervious;
+      // Social values
+      currentSocial.innerHTML = "1";
+      previousSocial.innerHTML = "3";
+
+      // Self Care values
+      currentSelf.innerHTML = "0";
+      previousSelf.innerHTML = "1";
     }
 
-    if (weeklyButton.checked = true){
-        // some crap here
-        workHours.innerHTML = JSON.parse(info)[0].timeframes.weekly.current;
-        workSummary.innerHTML = JSON.parse(info)[0].timeframes.weekly.pervious;
-        
-        playHours.innerHTML = JSON.parse(info)[1].timeframes.weekly.current;
-        playSummary.innerHTML = JSON.parse(info)[1].timeframes.weekly.pervious;
+    if (weeklyButton.checked === true){
+      // Work values
+      currentWork.innerHTML = "32";
+      previousWork.innerHTML = "36";
 
-        studyHours.innerHTML = JSON.parse(info)[2].timeframes.weekly.current;
-        studySummary.innerHTML = JSON.parse(info)[2].timeframes.weekly.pervious;
+      // Play values
+      currentPlay.innerHTML = "10";
+      previousPlay.innerHTML = "8";
 
-        exerciseHours.innerHTML = JSON.parse(info)[3].timeframes.weekly.current;
-        exerciseSummary.innerHTML = JSON.parse(info)[3].timeframes.weekly.pervious;
+      // Study values
+      currentStudy.innerHTML = "4";
+      previousStudy.innerHTML = "7";
 
-        socialHours.innerHTML = JSON.parse(info)[4].timeframes.weekly.current;
-        socialSummary.innerHTML = JSON.parse(info)[4].timeframes.weekly.pervious;
+      // Exercise values
+      currentExercise.innerHTML = "4"
+      previousExercise.innerHTML = "5";
 
-        selfHours.innerHTML = JSON.parse(info)[5].timeframes.weekly.current;
-        selfSummary.innerHTML = JSON.parse(info)[5].timeframes.weekly.pervious;
+      // Social values
+      currentSocial.innerHTML = "5";
+      previousSocial.innerHTML = "10";
+
+      // Self Care values
+      currentSelf.innerHTML = "2";
+      previousSelf.innerHTML = "2";
     }
 
-    if (Button.checked = true){
-        // some crap here
-        workHours.innerHTML = JSON.parse(info)[0].timeframes.monthly.current;
-        workSummary.innerHTML = JSON.parse(info)[0].timeframes.monthly.pervious;
-        
-        playHours.innerHTML = JSON.parse(info)[1].timeframes.monthly.current;
-        playSummary.innerHTML = JSON.parse(info)[1].timeframes.monthly.pervious;
+    if (monthlyButton.checked === true){
+      // Work values
+      currentWork.innerHTML = "103";
+      previousWork.innerHTML = "128";
 
-        studyHours.innerHTML = JSON.parse(info)[2].timeframes.monthly.current;
-        studySummary.innerHTML = JSON.parse(info)[2].timeframes.monthly.pervious;
+      // Play values
+      currentPlay.innerHTML = "23";
+      previousPlay.innerHTML = "29";
 
-        exerciseHours.innerHTML = JSON.parse(info)[3].timeframes.monthly.current;
-        exerciseSummary.innerHTML = JSON.parse(info)[3].timeframes.monthly.pervious;
+      // Study values
+      currentStudy.innerHTML = "13";
+      previousStudy.innerHTML = "19";
 
-        socialHours.innerHTML = JSON.parse(info)[4].timeframes.monthly.current;
-        socialSummary.innerHTML = JSON.parse(info)[4].timeframes.monthly.pervious;
+      // Exercise values
+      currentExercise.innerHTML = "11";
+      previousExercise.innerHTML = "18";
 
-        selfHours.innerHTML = JSON.parse(info)[5].timeframes.monthly.current;
-        selfSummary.innerHTML = JSON.parse(info)[5].timeframes.monthly.pervious;
+      // Social values
+      currentSocial.innerHTML = "21";
+      previousSocial.innerHTML = "23";
+
+      // Self Care values
+      currentSelf.innerHTML = "7";
+      previousSelf.innerHTML = "11";
     }
-    
-    
     
 }

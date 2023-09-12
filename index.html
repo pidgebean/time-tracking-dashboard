@@ -30,7 +30,7 @@
       <button>Monthly</button>  -->
       
       
-      <input type="radio" id="daily" class="radio" name="radio" onclick="dataCrap()">
+      <input type="radio" id="daily" class="radio" name="radio" onclick="dataCrap()" checked="checked">
       <label for="daily" id="daily-label">Daily</label>
 
       <input type="radio" id="weekly" class="radio" name="radio" onclick="dataCrap()">
@@ -38,7 +38,6 @@
 
       <input type="radio" id="monthly" class="radio" name="radio" onclick="dataCrap()">
       <label for="monthly" id="monthly-label">Monthly</label>
-
 
     </div>
   </div>
@@ -56,8 +55,16 @@
           </button>
         </span>
         
-        <h3 id="work-hours">32hrs</h3>
-        <h4 id="work-summary">Previous - 36hrs</h4>
+        <section class="current">
+          <div id="work-hours">32</div>
+          hrs
+        </section>
+        
+        <section class="previous">
+          Previous - 
+          <div id="work-summary">36hrs</div>
+
+        </section>
         
       </div>
     </div>
@@ -75,8 +82,15 @@
           </button>
         </span>
 
-        <h3 id="play-hours">10hrs</h3>
-        <h4 >Previous - <span id="play-summary">8hrs</span></h4>
+        <section class="current">
+          <div id="play-hours">10</div>
+          hrs
+        </section>
+        
+        <section class="previous">
+          Previous - 
+          <div id="play-summary">8hrs</div>
+        </section>
 
       </div>
     </div>
@@ -93,8 +107,15 @@
           </button>
         </span>
 
-        <h3 id="study-hours">4hrs</h3>
-        <h4 >Previous - <span id="study-summary">7hrs</span></h4>
+        <section class="current">
+          <div id="study-hours">4</div>
+          hrs
+        </section>
+        
+        <section class="previous">
+          Previous - 
+          <div id="study-summary">7hrs</div>
+        </section>
         
       </div>
     </div>
@@ -111,8 +132,15 @@
           </button>
         </span>
         
-        <h3 id="exercise-hours">4hrs</h3>
-        <h4 >Previous - <span id="exercise-summary">5hrs</span></h4>
+        <section class="current">
+          <div id="exercise-hours">4</div>
+          hrs
+        </section>
+
+        <section class="previous">
+          Previous - 
+          <div id="exercise-summary">5hrs</div>
+        </section>
         
       </div>
     </div>
@@ -129,8 +157,15 @@
           </button>
         </span>
 
-        <h3 id="social-hours">5hrs</h3>
-        <h4 >Previous - <span id="social-summary">10hrs</span></h4>
+        <section class="current">
+          <div id="social-hours">5</div>
+          hrs
+        </section>
+
+        <section class="previous">
+          Previous - 
+          <div id="social-summary">10hrs</div>
+        </section>
       
       </div>
     </div>
@@ -147,8 +182,15 @@
           </button>
         </span>
         
-        <h3 id="self-hours">2hrs</h3>
-        <h4 >Previous - <span id="self-summary">2hrs</span></h4>
+        <section class="current">
+          <div id="self-hours">2</div>
+          hrs
+        </section>
+
+        <section class="previous">
+          Previous - 
+          <div id="self-summary">2hrs</div>
+        </section>
         
       </div>
     </div>

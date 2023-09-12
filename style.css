@@ -55,7 +55,7 @@ body{
 #section-1 #account-name h1{
     color: white;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.5em;
     margin-bottom: 1.5em;
 }
 
@@ -85,7 +85,7 @@ body{
 }
 
 #section-1 #account-name{
-    background-color:  hsl(235, 45%, 61%);
+    background-color: hsl(235, 45%, 61%);
 }
 
 #section-2{
@@ -123,47 +123,47 @@ body{
 }
 
 #section-2 #card-1 #icon{
-    transform: translate(0, 0px);
+    transform: translate(0, 0em);
 }
 
 #section-2 #card-2 img{
-    transform: translate(0, -15px);
+    transform: translate(0, -0.9375em);
 }
 
 #section-2 #card-2 #icon{
-    transform: translate(0, 0px);
+    transform: translate(0, 0em);
 }
 
 #section-2 #card-3 img{
-    transform: translate(0, -15px);
+    transform: translate(0, -0.9375em);
 }
 
 #section-2 #card-3 #icon{
-    transform: translate(0, 0px);
+    transform: translate(0, 0em);
 }
 
 #section-2 #card-4 img{
-    transform: translate(0, -8px);
+    transform: translate(0, -0.5em);
 }
 
 #section-2 #card-4 #icon{
-    transform: translate(0, 0px);
+    transform: translate(0, 0em);
 }
 
 #section-2 #card-5 img{
-    transform: translate(0, -25px);
+    transform: translate(0, -1.5625em);
 }
 
 #section-2 #card-5 #icon{
-    transform: translate(0, 0px);
+    transform: translate(0, 0em);
 }
 
 #section-2 #card-6 img{
-    transform: translate(0, -20px);
+    transform: translate(0, -1.25em);
 }
 
 #section-2 #card-6 #icon{
-    transform: translate(0, 0px);
+    transform: translate(0, 0em);
 }
 
 #section-2 #card-2{
@@ -248,15 +248,58 @@ body{
     transform: translate(0, 0);
 }
 
-#section-2 #description h3{
-    font-size: 40px;
+#section-2 #description .current{
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
     color: white;
     font-weight: 400;
     margin-bottom: 0.3em;
 }
 
-#section-2 #description h4{
+#section-2 #description .previous{
+    display: flex;
+    flex-direction: row;
     font-weight: 300;
     color: hsl(235, 45%, 61%);
+}
+
+/* MEDIA QUERIES FOR DIFFERENT SCREEN SIZES*/
+
+@media (min-width: 375px){
+    body{
+        flex-direction: column;
+        padding-left: 1.5em;
+    }
+
+    #section-1{
+        width: 327px;
+        height: 203px;  
+    }
+
+    #section-1 #account-name{
+        flex-direction: row;
+    }
+
+    #section-1 img{
+        width: 64px;
+        height: 64px;
+    }
+
+    #section-1 h1{
+        flex-direction: row;
+        width: 170px;
+        height: 28px;
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    #section-1 #tabs{
+        flex-direction: row;
+    }
+    #section-2{
+        grid-template-columns: 15em;
+        grid-template-rows: repeat(6, 15em);
+    }
 }
 
