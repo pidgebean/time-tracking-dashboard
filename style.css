@@ -266,19 +266,24 @@ body{
 
 /* MEDIA QUERIES FOR DIFFERENT SCREEN SIZES*/
 
-@media (min-width: 375px){
+@media (max-width: 375px){
     body{
         flex-direction: column;
         padding-left: 1.5em;
+        padding: 0;
     }
 
     #section-1{
         width: 327px;
-        height: 203px;  
+        height: 203px; 
+        padding-left: 2em; 
     }
+
 
     #section-1 #account-name{
         flex-direction: row;
+        margin: 0;
+        font-size: 15px;
     }
 
     #section-1 img{
@@ -286,12 +291,16 @@ body{
         height: 64px;
     }
 
+    #section-1 h4{
+        padding-left: 100px;
+    }
+
     #section-1 h1{
         flex-direction: row;
         width: 170px;
         height: 28px;
         margin: 0;
-        font-size: 1.5em;
+        font-size: 15px;
     }
 
     #section-1 #tabs{
@@ -300,6 +309,78 @@ body{
     #section-2{
         grid-template-columns: 15em;
         grid-template-rows: repeat(6, 15em);
+        margin-right: 2em;
+        margin-left: 0;
     }
+
+    #section-2 .card{
+        width: 327px;
+        height: 160px;
+    }
+
+    #section-2 #card-2{
+        padding-top: -5em;
+    }
+
+    #section-2 .card #hours{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #section-2 .card #hours .current{
+        margin-right: 1.2em;
+    }
+
+    #section-2 .card #hours .previous{
+        margin-top: 1em;
+    }
+
+    
+
+    #section-2 #color-1{
+        padding-left: 13em;
+        height: 2.5em;
+        max-width: 100%;
+        overflow: hidden;
+        padding-left: 2em;
+    }
+
+    #section-2 #color-2{
+        padding-left: 13em;
+        height: 2.5em;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    #section-2 #color-3{
+        padding-left: 13em;
+        height: 2.5em;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    #section-2 #color-4{
+        padding-left: 13em;
+        height: 2.5em;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    #section-2 #color-5{
+        padding-left: 13em;
+        height: 2.5em;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    #section-2 #color-6{
+        padding-left: 13em;
+        height: 2.5em;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    
+
 }
 
