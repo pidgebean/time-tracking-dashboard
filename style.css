@@ -276,23 +276,34 @@ body{
     #section-1{
         width: 327px;
         height: 203px; 
-        padding-left: 2em; 
+        /* padding-left: 2em;  */
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+        margin-left: 1em;
     }
 
 
     #section-1 #account-name{
+        display: flex;
         flex-direction: row;
         margin: 0;
         font-size: 15px;
     }
 
+    #section-1 #name{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3em;
+    }
+
+    #section-1 #name-2{
+        font-size: 20px;
+        color:white;
+    }
+
     #section-1 img{
         width: 64px;
         height: 64px;
-    }
-
-    #section-1 h4{
-        padding-left: 100px;
     }
 
     #section-1 h1{
@@ -301,16 +312,21 @@ body{
         height: 28px;
         margin: 0;
         font-size: 15px;
+        /* padding-left: 100px; */
+    
     }
 
     #section-1 #tabs{
         flex-direction: row;
     }
+
     #section-2{
         grid-template-columns: 15em;
-        grid-template-rows: repeat(6, 15em);
+        grid-template-rows: repeat(6, 12em);
+        height: 1300px;
         margin-right: 2em;
         margin-left: 0;
+        margin-bottom: 1em;
     }
 
     #section-2 .card{
