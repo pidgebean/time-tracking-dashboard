@@ -269,8 +269,8 @@ body{
 @media (max-width: 375px){
     body{
         flex-direction: column;
-        padding-left: 1.5em;
-        padding: 0;
+        padding-left: 0.5em;
+        /* padding: 0; */
     }
 
     #section-1{
