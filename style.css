@@ -326,6 +326,12 @@ body{
         margin-bottom: 1em;
     }
 
+    #section-1 #account-name #name-2{
+        width: 170px;
+        height: 28px;
+        font-size: 23px;
+    }
+
     #section-2 .card{
         width: 327px;
         height: 160px;
