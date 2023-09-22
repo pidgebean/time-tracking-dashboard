@@ -263,7 +263,7 @@ body{
 
 /* MEDIA QUERIES FOR DIFFERENT SCREEN SIZES*/
 
-@media (max-width: 375px){
+@media (max-width: 450px){
     body{
         flex-direction: column;
         padding-left: 0.5em;
@@ -271,8 +271,8 @@ body{
     }
 
     #section-1{
-        width: 327px;
-        height: 203px; 
+        width: 20.4375em;
+        height: 12.6875em; 
         /* padding-left: 2em;  */
         margin-bottom: 1.5em;
         margin-top: 1em;
@@ -284,7 +284,7 @@ body{
         display: flex;
         flex-direction: row;
         margin: 0;
-        font-size: 15px;
+        font-size: 0.9375em;
     }
 
     #section-1 #name{
@@ -294,21 +294,21 @@ body{
     }
 
     #section-1 #name-2{
-        font-size: 20px;
+        font-size: 1.25em;
         color:white;
     }
 
     #section-1 img{
-        width: 64px;
-        height: 64px;
+        width: 4em;
+        height: 4em;
     }
 
     #section-1 h1{
         flex-direction: row;
-        width: 170px;
-        height: 28px;
+        width: 10.625em;
+        height: 1.75em;
         margin: 0;
-        font-size: 15px;
+        font-size: 0.9375em;
         /* padding-left: 100px; */
     
     }
@@ -320,21 +320,21 @@ body{
     #section-2{
         grid-template-columns: 15em;
         grid-template-rows: repeat(6, 12em);
-        height: 1300px;
+        height: 81.25em;
         margin-right: 2em;
         margin-left: 0;
         margin-bottom: 1em;
     }
 
     #section-1 #account-name #name-2{
-        width: 170px;
-        height: 28px;
-        font-size: 23px;
+        width: 10.625em;
+        height: 1.75em;
+        font-size: 1.4375em;
     }
 
     #section-2 .card{
-        width: 327px;
-        height: 160px;
+        width: 20.4375em;
+        height: 10em;
     }
 
     #section-2 #card-2{
@@ -353,8 +353,6 @@ body{
     #section-2 .card #hours .previous{
         margin-top: 1em;
     }
-
-    
 
     #section-2 #color-1{
         padding-left: 13em;
@@ -397,9 +395,7 @@ body{
         height: 2.5em;
         max-width: 100%;
         overflow: hidden;
-    }
-
-    
+    }   
 
 }
 
